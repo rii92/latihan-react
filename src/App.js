@@ -1,5 +1,5 @@
 import React from 'react'
-import { Admin, EditGuesser, Resource } from 'react-admin';
+import { Admin, Resource } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 import { UserList } from './users';
 import {PostCreate, PostEdit, PostList} from './posts';
@@ -7,6 +7,7 @@ import PostIcon from '@mui/icons-material/Book';
 import UserIcon from '@mui/icons-material/Group';
 import Dashboard from './Dashboard';
 import authProvider from './authProvider';
+import simpleRestProvider from 'ra-data-simple-rest';
 
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 
